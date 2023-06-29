@@ -1,7 +1,6 @@
 import { initializeApp } from "firebase/app";
 import {
   getAuth,
-  signInWithRedirect,
   signInWithPopup,
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
@@ -17,9 +16,6 @@ const firebaseConfig = {
   messagingSenderId: "8869888977",
   appId: "1:8869888977:web:2cb098fb6b7f62a98656f0",
 };
-
-// Initialize Firebase
-const firebaseApp = initializeApp(firebaseConfig);
 
 const provider = new GoogleAuthProvider();
 
